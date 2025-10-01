@@ -5,7 +5,7 @@ from discord.ext import commands
 import os 
 
 
-TOKEN = os.environ.get("TOKEN")
+TOKEN = os.environ.get("TOKEN-Discord")
 
 CANAL_ID = 1422633179306786816
 
