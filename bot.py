@@ -10,7 +10,7 @@ RSS_URL = "https://www.guildwars2.com/en/rss"
 
 intents = discord.Intents.default()
 intents.message_content = True 
-intents.members = True   
+intents.members = True 
 intents.presences = True 
 
 client = commands.Bot(command_prefix='!', intents=intents)
@@ -80,6 +80,8 @@ async def test(ctx):
 
 @client.event
 async def on_ready():
+    print(f"✅ Bot conectado como {client.user} (ID: {client.user.id})")
+    
     if not hasattr(client, 'ja_postadas'):
         client.ja_postadas = set()
         
