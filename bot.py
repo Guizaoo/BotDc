@@ -3,20 +3,18 @@ import feedparser
 import asyncio
 import os
 from discord.ext import commands, tasks
-from dotenv import load_dotenv
+from dotenv import load_dotenv # Adicionei a importação
 
 # Carrega as variáveis de ambiente do .env
 load_dotenv() 
 
-# Configurações
+# --- CONFIGURAÇÕES DO BOT ---
 TOKEN = os.environ.get("TOKEN-Discord")
 # CERTIFIQUE-SE DE QUE ESTE É O ID CORRETO DO SEU CANAL
-CANAL_ID = 1422633179306786816
-# URL do RSS do Guild Wars 2. Se esta falhar, tente uma alternativa como:
-# RSS_URL = "https://en-forum.guildwars2.com/discover/6.xml/"
+CANAL_ID = 1422633179306786816 
 RSS_URL = "https://www.guildwars2.com/en/rss" 
 
-# Configuração das Intents
+# --- CONFIGURAÇÃO DE INTENTS ---
 # Apenas a Message Content é necessária para ler comandos de prefixo
 intents = discord.Intents.default()
 intents.message_content = True 
