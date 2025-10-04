@@ -11,7 +11,7 @@ load_dotenv()
 # Configurações
 TOKEN = os.environ.get("TOKEN-Discord")
 # CERTIFIQUE-SE DE QUE ESTE É O ID CORRETO DO SEU CANAL
-CANAL_ID = 1422633179306786816 
+CANAL_ID = 1422633179306786816
 # URL do RSS do Guild Wars 2. Se esta falhar, tente uma alternativa como:
 # RSS_URL = "https://en-forum.guildwars2.com/discover/6.xml/"
 RSS_URL = "https://www.guildwars2.com/en/rss" 
